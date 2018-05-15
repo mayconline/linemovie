@@ -1,19 +1,41 @@
-<div>pinrcial
+<div class="container">
+<div class="row ">
+       
+    <div class="col-sm-12 text-center" >
+         <h3>Top 20 Filmes Mais Votados</h3> 
+        </div>
+</div>
 
 
- <ul>
+<div class="row  ">
 
-    <li *ngFor="let filme of topfilmes ">
-      
-      Nome:  {{filme.title}}  <br>
-      resumo: {{filme.overview}}  <br>
-      Media de Votos:  {{filme.vote_average}}   <br>
-      
-      <img [src]=" 'https://image.tmdb.org/t/p/w500/' + filme.backdrop_path">
-    </li>
+    <div class="col-sm-6 " *ngFor="let filme of topfilmes " >
+            <div class="card text-center"  >
+                    <h5 class="card-header">{{filme.title}}</h5>
+                    <img class="card-img-top" [src]=" 'https://image.tmdb.org/t/p/w500/' + filme.backdrop_path">
+                       <div class="card-body">
+                      
+                         <h6 class="card-subtitle mb-2 text-muted">Média de Votos: {{filme.vote_average}}  </h6>
+                         <p class="card-text"> Sinopse: {{filme.overview}} </p>
+                        
+                       </div>
+                     </div>
+                    
 
+    </div>
 
- </ul>   
-
+    
+</div>
 
 </div>
+
+    
+      
+
+
+    
+
+ 
+
+
+

@@ -16,7 +16,7 @@ export class PrincipalComponent implements OnInit {
 
   img_Path = 'https://image.tmdb.org/t/p/w500/'
 
-  carros: string[] = ['gol','fiat']
+
   constructor(private Moviedb:MooviedbService) { }
 
   ngOnInit() {

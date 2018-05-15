@@ -14,10 +14,7 @@ export class MooviedbService {
   constructor(private _http:Http) { }
 
 
- /* getFilmesTop(){
-    return   `${this.Path}/movie/top_rated${this.Key}  ` 
-  }*/
-  
+
 
   getTopRated() {
 
