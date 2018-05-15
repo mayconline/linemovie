@@ -5,10 +5,15 @@
 
     <li *ngFor="let filme of topfilmes ">
       
-        {{filme}}              
+      Nome:  {{filme.title}}  <br>
+      resumo: {{filme.overview}}  <br>
+      Media de Votos:  {{filme.vote_average}}   <br>
+      
+      <img [src]=" 'https://image.tmdb.org/t/p/w500/' + filme.backdrop_path">
     </li>
+
 
  </ul>   
 
-{{pagina}}
+
 </div>
