@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row ">
+         
+      <div class="col-sm-12 text-center" >
+           <h3>Top 20 Series Mais Votadas</h3> 
+          </div>
+  </div>
+  
+  
+  <div class="row  ">
+  
+      <div class="col-sm-6 " *ngFor="let serie of topseries " >
+              <div class="card text-center"  >
+                      <h5 class="card-header">{{serie.name}}</h5>
+                      <img class="card-img-top" [src]=" 'https://image.tmdb.org/t/p/w500/' + serie.backdrop_path">
+                         <div class="card-body">
+                        
+                           <h6 class="card-subtitle mb-2 text-muted">Média de Votos: {{serie.vote_average}}  </h6>
+                           <p class="card-text"> Sinopse: {{serie.overview}} </p>
+                          
+                         </div>
+                       </div>
+                      
+  
+      </div>
+  
+      
+  </div>
+  
+  </div>
+  
+      
+        
+  
+  
+      
+  
+   
+  
+  
+  
+  

@@ -1,7 +1,7 @@
 import { Routes, RouterModule } from '@angular/router'
 import { PrincipalComponent } from './principal/principal.component';
-import { SobreComponent } from './sobre/sobre.component';
 import { NgModule } from '@angular/core';
+import { SeriesComponent } from './series/series.component';
 const routes: Routes = [
     
     {
@@ -9,8 +9,8 @@ const routes: Routes = [
         component: PrincipalComponent
     },
     {
-        path: 'sobre',
-        component: SobreComponent
+        path: 'series',
+        component: SeriesComponent
     }
    
 ];
@@ -18,7 +18,7 @@ const routes: Routes = [
 
 @NgModule({
 
-    imports: [RouterModule.forRoot(routes/*, {useHash: true}*/)],
+    imports: [RouterModule.forRoot(routes)],
    
     exports: [RouterModule]
    

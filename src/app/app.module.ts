@@ -6,17 +6,20 @@ import { AppComponent } from './app.component';
 
 import { PrincipalModule } from './principal/principal.module';
 import { NavbarModule } from './navbar/navbar.module';
-import { SobreModule } from './sobre/sobre.module';
+
 import { AppRoutingModule } from './app.router';
 import { HttpModule } from '@angular/http'
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+
+import { SeriesModule } from './series/series.module';
 
 
 
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
+    
     
   
     
@@ -26,10 +29,10 @@ import {HttpClientModule} from '@angular/common/http'
     NgbModule.forRoot(),
     PrincipalModule,
     NavbarModule,
-    SobreModule,
     AppRoutingModule,
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    SeriesModule
     
   ],
   providers: [],
