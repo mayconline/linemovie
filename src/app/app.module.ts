@@ -12,6 +12,8 @@ import { HttpModule } from '@angular/http'
 import {HttpClientModule} from '@angular/common/http';
 
 import { SeriesModule } from './series/series.module';
+import { FirebaseConfig } from './firebase.config';
+import {AngularFireModule } from 'angularfire2';
 
 
 
@@ -27,6 +29,7 @@ import { SeriesModule } from './series/series.module';
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
+    AngularFireModule.initializeApp(FirebaseConfig),
     PrincipalModule,
     NavbarModule,
     AppRoutingModule,
